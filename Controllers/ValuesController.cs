@@ -11,6 +11,8 @@ namespace SampleWebApi.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        [HttpGet]
+        [Route("GetWelcomeMessage")]
         public string GetWelcomeMessage()
         {
             return "Welcome to values controller";

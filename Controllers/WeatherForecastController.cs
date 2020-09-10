@@ -35,6 +35,8 @@ namespace SampleWebApi.Controllers
             })
             .ToArray();
         }
+        [HttpGet]
+        [Route("GetName")]
         public IEnumerable<string> GetName()
         {
             List<string> ls = new List<string>();
