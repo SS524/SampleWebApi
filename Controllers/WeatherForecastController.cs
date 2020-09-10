@@ -35,5 +35,13 @@ namespace SampleWebApi.Controllers
             })
             .ToArray();
         }
+        public IEnumerable<string> GetName()
+        {
+            List<string> ls = new List<string>();
+            ls.Add("Soumyadeep");
+            ls.Add("Prithwiman");
+            ls.Add("Arghyadeep");
+            return ls;
+        }
     }
 }
